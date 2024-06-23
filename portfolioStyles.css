@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #navbar ul li {
+    padding: 10px;
+  }
+  
+  #welcome-section {
+    height: 100vh; /* Height equal to viewport height */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #projects {
+    padding: 50px;
+  }
+  
+  .project-tile {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #profile-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar ul li {
+      margin-bottom: 10px;
+    }
+  
+    #projects {
+      padding: 20px;
+    }
+  }
