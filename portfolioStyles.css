@@ -53,9 +53,18 @@ body {
   margin: 0;
 }
 
+.project-gallery h1 {
+  font-size: 3em; 
+}
+
 #projects {
   padding: 50px;
-  background-color: #fff;
+  background-color: #fff; 
+}
+
+#projects h1 {
+  margin-bottom: 20px; /* Decreased margin to reduce the gap */
+  color: #333;
 }
 
 .project-tile {
@@ -66,6 +75,8 @@ body {
   background-color: #f0f8ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(20px); /* Initial state for animation */
 }
 
 .project-tile:hover {
