@@ -115,11 +115,19 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
   opacity: 0; /* Initial state for animation */
   transform: translateY(20px); /* Initial state for animation */
+  text-align: center; /* Center the content */
 }
 
 .project-tile:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile img.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .project-tile h2 {
