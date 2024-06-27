@@ -57,6 +57,10 @@ body {
   opacity: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #welcome-section {
   height: 100vh;
   background: linear-gradient(to right, #0066cc, #00ccff);
