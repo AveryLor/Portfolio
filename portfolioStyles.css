@@ -86,7 +86,7 @@ html {
 /* Typewriter effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 12ch } /* Adjust the value based on the number of characters */
+  to { width: 15ch } /* Adjust the value based on the number of characters */
 }
 
 /* Cursor blink effect */
@@ -144,16 +144,22 @@ html {
   display: block;
   text-align: center;
   margin: 20px auto;
-  color: #0073e6;
+  color: #fff;
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  transition: color 0.3s;
+  border-radius: 5px;
+  transition: color 0.3s, background 0.3s;
 }
 
 #profile-link:hover {
-  color: #ff6600;
+  color: #ffcc00;
+  transition: color 0.3s; 
+  background: linear-gradient(to right, #00ccff, #0066cc);
 }
+
 
 @media screen and (max-width: 768px) {
   #navbar ul {
