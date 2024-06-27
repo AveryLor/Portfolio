@@ -28,17 +28,45 @@ body {
   padding: 10px;
 }
 
+/* Add this to the existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 #navbar ul li a {
   position: relative;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s, font-weight 0.3s;
+  font-size: 18px; /* Adjust font size as needed */
+  padding: 10px;
+}
+
+#navbar ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffcc00;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#navbar ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #navbar ul li a:hover {
-  color: #0073e6;
+  color: #ffcc00;
   font-weight: bold;
 }
+
 
 #navbar ul li a::before {
   content: '';
@@ -81,6 +109,28 @@ html {
   border-right: 0.15em solid orange; /* Cursor effect */
   width: 0; /* Start with zero width */
   animation: typing 2.5s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+.circle-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: auto;
+  margin-left: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Typewriter effect */
