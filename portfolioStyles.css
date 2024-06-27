@@ -201,3 +201,43 @@ body {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
+
+#additional-projects {
+  padding: 50px;
+  background-color: #e0f7fa;
+}
+
+#additional-projects h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.project-card {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 80%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+.project-card p {
+  color: #555;
+}
+
+
+
+
