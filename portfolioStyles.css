@@ -72,6 +72,23 @@ body {
   font-size: 3em;
   margin: 0;
   margin-bottom: 20px;
+  overflow: hidden; /* Ensures the text is not visible outside the box */
+  white-space: nowrap; /* Keeps the text on a single line */
+  border-right: 0.15em solid orange; /* Cursor effect */
+  width: 0; /* Start with zero width */
+  animation: typing 2.5s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch } /* Adjust the value based on the number of characters */
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
 
 .social-icons {
