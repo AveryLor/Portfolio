@@ -62,7 +62,7 @@ body {
   background: linear-gradient(to right, #0066cc, #00ccff);
   color: #fff;
   display: flex;
-  flex-direction: column; /* Added to arrange content vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -71,7 +71,7 @@ body {
 #welcome-section h1 {
   font-size: 3em;
   margin: 0;
-  margin-bottom: 20px; /* Added to create space between the text and icons */
+  margin-bottom: 20px;
 }
 
 .social-icons {
@@ -91,17 +91,13 @@ body {
   color: #ffcc00;
 }
 
-.project-gallery h1 {
-  font-size: 3em; 
-}
-
 #projects {
   padding: 50px;
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 #projects h1 {
-  margin-bottom: 20px; /* Decreased margin to reduce the gap */
+  margin-bottom: 20px;
   color: #333;
 }
 
@@ -113,43 +109,14 @@ body {
   background-color: #f0f8ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  opacity: 0; /* Initial state for animation */
-  transform: translateY(20px); /* Initial state for animation */
-  text-align: center; /* Center the content */
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: center;
 }
 
 .project-tile:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-tile img.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.project-tile h2 {
-  margin-top: 0;
-  color: #0073e6;
-}
-
-.project-tile p {
-  color: #555;
-}
-
-.project-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #0073e6;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.project-link:hover {
-  color: #ff6600;
 }
 
 #profile-link {
@@ -180,26 +147,6 @@ body {
   #projects {
     padding: 20px;
   }
-}
-
-#typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
 }
 
 #additional-projects {
@@ -237,7 +184,3 @@ body {
 .project-card p {
   color: #555;
 }
-
-
-
-
