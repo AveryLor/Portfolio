@@ -82,7 +82,7 @@ body {
 /* Typewriter effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 22ch } /* Adjust the value based on the number of characters */
+  to { width: 12ch } /* Adjust the value based on the number of characters */
 }
 
 /* Cursor blink effect */
