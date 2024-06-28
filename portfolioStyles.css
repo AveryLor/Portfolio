@@ -35,6 +35,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+#navbar ul li a:hover {
+  font-weight: bold;
+}
+
+/* Add this new rule to ensure font-weight change doesn't affect others */
 #navbar ul li a {
   position: relative;
   color: #fff;
@@ -42,6 +47,7 @@ body {
   transition: color 0.3s, background-color 0.3s, font-weight 0.3s;
   font-size: 18px; /* Adjust font size as needed */
   padding: 10px;
+  display: inline-block; /* Ensure each link is treated independently */
 }
 
 #navbar ul li a::after {
@@ -62,12 +68,6 @@ body {
   transform-origin: bottom left;
 }
 
-#navbar ul li a:hover {
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-
 #navbar ul li a::before {
   content: '';
   position: absolute;
@@ -75,7 +75,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s;
@@ -111,28 +110,6 @@ html {
   animation: typing 2.5s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
 }
 
-.circle-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the circle relative to its own dimensions */
-  width: 300px;
-  height: 300px;
-  margin-top: -150px, -150px; 
-  border: 2px solid #fff;
-  border-radius: 50%;
-  animation: rotate 5s linear infinite;
-}
-
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Typewriter effect */
 @keyframes typing {
