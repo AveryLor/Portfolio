@@ -115,14 +115,15 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
-  height: 500px;
-  margin-top: auto;
-  margin-left: auto;
+  transform: translate(-50%, -50%); /* Center the circle relative to its own dimensions */
+  width: 300px;
+  height: 300px;
+  margin-top: -150px, -150px; 
   border: 2px solid #fff;
   border-radius: 50%;
   animation: rotate 5s linear infinite;
 }
+
 
 @keyframes rotate {
   from {
