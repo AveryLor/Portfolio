@@ -9,15 +9,19 @@
   <link rel="icon" href="icons/portfolioIcon.png" type="image/x-icon"/>
 </head>
 <body>
+  
   <nav id="navbar">
     <ul>
-      <li><a href="#welcome-section">Welcome</a></li>
-      <li><a href="#additional-projects">Projects</a></li>
-      <li><a href="#profile-link">Profile</a></li>
+      <li><a href="#welcome-section" data-text="Section 1">Welcome</a></li>
+      <li><a href="#additional-projects" data-text="Section 2">Projects</a></li>
+      <li><a href="#profile-link" data-text="Section 3">Profile</a></li>
     </ul>
   </nav>
 
   <section id="welcome-section">
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
     <h1>Hi, I'm Avery Lor!</h1>
     <div class="social-icons">
       <a href="https://www.instagram.com/averylor2/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -43,7 +47,23 @@
     </div>
   </section>
 
-  <a href="#" id="profile-link">Return to top</a>
+  <section id="about-me">
+    <h1>Who Am I?</h1>
+    <div class="project-card">
+      <h2>About Me</h2>
+      <p>Text</p>
+    </div>
+    <div class="project-card">
+      <h2>Education</h2>
+      <p></p>
+      <img src="uoft-logo.png" alt="University of Toronto Logo" class="education-logo">
+
+    </div>
+
+  </section>
+
+
+  <a href="#welcome-section" id="profile-link">Return to top</a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="script.js"></script>
