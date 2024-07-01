@@ -36,3 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const projectCards = document.querySelectorAll('.project-card');
+
+  const slideInOnScroll = () => {
+    projectCards.forEach(card => {
+      const cardPosition = card.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+
+      if (cardPosition < screenPosition) {
+        card.classList.add('slide-in');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', slideInOnScroll);
+  slideInOnScroll(); // Trigger the function to check the initial position of elements
+});
