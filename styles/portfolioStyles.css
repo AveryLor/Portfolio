@@ -239,24 +239,24 @@ html {
   transform: translateX(-100%);
 }
 
-.project-card.slide-in {
+.div-card.slide-in {
   opacity: 1;
   transform: translateX(0);
 }
 
 
 
-.project-card:hover {
+.div-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h2 {
+.div-card h2 {
   margin-top: 0;
   color: #0073e6;
 }
 
-.project-card p {
+.div-card p {
   color: #555;
 }
 
@@ -275,7 +275,7 @@ html {
   color: #555;
 }
 
-#about-me .project-card {
+#about-me .div-card {
   border: 2px solid #0073e6;
   border-radius: 10px;
   padding: 20px;
@@ -286,17 +286,17 @@ html {
   max-width: 80%;
 }
 
-#about-me .project-card:hover {
+#about-me .div-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#about-me .project-card h2 {
+#about-me .div-card h2 {
   margin-top: 0;
   color: #0073e6;
 }
 
-#about-me .project-card p {
+#about-me .div-card p {
   color: #555;
 }
 
