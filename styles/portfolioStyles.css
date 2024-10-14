@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #navbar ul {
+    font-size: 16px;
+  }
+  
+  .div-card {
+    max-width: 90%;
+  }
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -309,3 +320,4 @@ html {
   max-width: 100px; /* Adjust size as needed */
   margin-top: 10px; /* Optional spacing */
 }
+
