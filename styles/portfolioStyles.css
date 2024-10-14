@@ -316,6 +316,12 @@ html {
   color: black;
 }
 
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
 .education-logo {
   max-width: 100px; /* Adjust size as needed */
   height: auto; 
