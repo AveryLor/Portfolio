@@ -334,6 +334,12 @@ section {
   color: #0073e6;
 }
 
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #f3f3f3;
+}
+
 
 .education-logo {
   max-width: 100px; /* Adjust size as needed */
