@@ -321,6 +321,19 @@ section {
   border-bottom: 1px solid #ddd;
 }
 
+.social-icons a {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+  background-color: #ffcc00;
+  color: #0073e6;
+}
+
 
 .education-logo {
   max-width: 100px; /* Adjust size as needed */
