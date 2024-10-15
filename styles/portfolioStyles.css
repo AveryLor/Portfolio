@@ -346,6 +346,7 @@ section {
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
+  
 }
 .social-icons a:hover {
   background-color: #ffcc00;
@@ -358,4 +359,5 @@ section {
   height: auto; 
   margin-top: 10px; /* Optional spacing */
 }
+
 
