@@ -16,7 +16,7 @@ body {
   background-color: #0073e6;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  z-index: 100; /* Ensure navbar is above everything */
 }
 
 #navbar ul {
@@ -61,6 +61,7 @@ body {
 }
 
 #navbar ul li a:hover {
+  font-weight: bold;
   color: #ffcc00;
 }
 
@@ -81,7 +82,8 @@ html {
 
 #welcome-section h1 {
   font-size: 3em;
-  margin: 0 0 20px;
+  margin: 0;
+  margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid orange;
@@ -89,22 +91,24 @@ html {
   animation: typing 2.5s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
 }
 
+/* Typewriter effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 13ch }
 }
 
+/* Cursor blink effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
 
 .loader-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  position: absolute; /* Change to fixed to prevent scrolling */
+  top: 50%; /* Adjust position to center vertically */
+  left: 50%; /* Adjust position to center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 10; /* Ensure loader is behind navbar and icons */
 }
 
 .loader {
@@ -112,11 +116,11 @@ html {
   height: 550px;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0% {
     transform: scale(0.9);
     opacity: 0.7;
   }
@@ -124,13 +128,17 @@ html {
     transform: scale(1);
     opacity: 1;
   }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  z-index: 50;
+  z-index: 50; /* Ensure icons are above loader */
 }
 
 .social-icons a {
@@ -144,54 +152,33 @@ html {
   color: #ffcc00;
 }
 
-#projects, #additional-projects, #about-me {
+#projects {
   padding: 50px;
   background-color: #fff;
-  z-index: 20;
+  z-index: 20; /* Ensure content is above loader */
 }
 
-#projects h1, #additional-projects h1, #about-me h1 {
+#projects h1 {
   margin-bottom: 20px;
   color: #333;
-  text-align: center;
 }
 
-.project-tile, .project-card, #about-me .project-card {
+.project-tile {
   border: 2px solid #0073e6;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px auto;
+  margin-bottom: 20px;
   background-color: #f0f8ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   opacity: 0;
   transform: translateY(20px);
   text-align: center;
-  max-width: 80%;
 }
 
-.project-tile:hover, .project-card:hover, #about-me .project-card:hover {
+.project-tile:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-card {
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-  transform: translateX(-100%);
-}
-
-.project-card.slide-in {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.project-card h2, #about-me h2 {
-  margin-top: 0;
-  color: #0073e6;
-}
-
-.project-card p, #about-me p {
-  color: #555;
 }
 
 #profile-link {
@@ -228,7 +215,97 @@ html {
   }
 }
 
+#additional-projects {
+  padding: 50px;
+  background-color: #e0f7fa;
+}
+
+#additional-projects h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.project-card {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-out, box-shadow 0.3s, opacity 0.6s ease-out;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.project-card.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+.project-card p {
+  color: #555;
+}
+
+
+#about-me {
+  padding: 50px;
+  background-color: #e0f7fa;
+}
+
+#about-me h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+#about-me p {
+  color: #555;
+}
+
+#about-me .project-card {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 80%;
+}
+
+#about-me .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#about-me .project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+#about-me .project-card p {
+  color: #555;
+}
+
+#about-me h1 {
+  text-align: center;
+  color: black;
+}
+
 .education-logo {
-  max-width: 100px;
-  margin-top: 10px;
+  max-width: 100px; /* Adjust size as needed */
+  margin-top: 10px; /* Optional spacing */
 }
