@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -43,7 +43,7 @@ body {
 }
 
 #navbar ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -88,19 +88,29 @@ html {
   white-space: nowrap;
   border-right: 0.15em solid orange;
   width: 0;
-  animation: typing 2.5s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+  animation: typing 2.5s steps(30, end) 1s 1 normal both,
+    blink-caret 0.75s step-end infinite;
 }
 
 /* Typewriter effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 13ch }
+  from {
+    width: 0;
+  }
+  to {
+    width: 13ch;
+  }
 }
 
 /* Cursor blink effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 
 .loader-wrapper {
@@ -116,7 +126,7 @@ html {
   height: 550px;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -244,8 +254,6 @@ html {
   transform: translateX(0);
 }
 
-
-
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -259,7 +267,6 @@ html {
 .project-card p {
   color: #555;
 }
-
 
 #about-me {
   padding: 50px;
