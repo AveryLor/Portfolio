@@ -316,3 +316,15 @@ html {
   max-width: 100px; /* Adjust size as needed */
   margin-top: 10px; /* Optional spacing */
 }
+
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card img {
+    width: 90%;
+    height: auto;
+  }
+}
