@@ -328,3 +328,12 @@ html {
     height: auto;
   }
 }
+
+
+.project-image {
+  width: 100%; /* Make the image take up the full width of the card */
+  height: 200px; /* Set a consistent height for the images */
+  object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners for better aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
