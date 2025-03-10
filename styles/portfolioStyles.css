@@ -313,10 +313,9 @@ html {
 }
 
 .education-logo {
-  max-width: 100px; /* Adjust size as needed */
+  max-width: 300px; /* Adjust size as needed */
   margin-top: 10px; /* Optional spacing */
 }
-
 
 @media (max-width: 768px) {
   .project-card {
@@ -328,7 +327,6 @@ html {
     height: auto;
   }
 }
-
 
 .project-image {
   width: 100%; /* Make the image take up the full width of the card */
